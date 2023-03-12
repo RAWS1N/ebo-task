@@ -1,8 +1,8 @@
 export const services = [
   {
     id: 1,
-    tag: "My Orders",
-    text: "View,modify & track orders",
+    tag: "My Bookings",
+    text: "View, modify & track bookings",
   },
   {
     id: 2,

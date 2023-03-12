@@ -1,11 +1,11 @@
 import React from 'react'
-import {Navbar,Main} from '../components'
+import {Navbar,Main,MainII} from '../components'
 
 function Home() {
   return (
     <div>
         <Navbar/>
-        <Main/>
+        <MainII/>
     </div>
   )
 }

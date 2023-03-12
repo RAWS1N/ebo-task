@@ -3,7 +3,7 @@ import { UserUtility } from './pages'
 
 function App() {
   return (
-    <div>
+    <div className="text-gray-900">
         <UserUtility/>
     </div>
   )
