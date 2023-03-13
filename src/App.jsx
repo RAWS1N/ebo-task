@@ -1,12 +1,12 @@
-import React from 'react'
-import { UserUtility } from './pages'
+import React from "react";
+import MyComponent from "./myComponent/MyComponent";
 
 function App() {
   return (
     <div className="text-gray-900">
-        <UserUtility/>
+      <MyComponent/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

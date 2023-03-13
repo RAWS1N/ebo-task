@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import {Home} from '../containers'
 
 function UserUtility() {
   return (
     <div className="">
-        <Home/>
+      <Home />
     </div>
-  )
+  );
 }
 
-export default UserUtility
+export default UserUtility;

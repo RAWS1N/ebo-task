@@ -1,5 +1,5 @@
 import React from "react";
-import { services, mobileLinks } from "../utility/data";
+import { services, mobileLinks } from "../../utility/data";
 import ServiceII from "./ServiceII";
 import MobileLinkII from "./MobileLinkII";
 import { MdEdit } from "react-icons/md";
@@ -8,7 +8,7 @@ import { AiOutlineLeft } from "react-icons/ai";
 function Main() {
   return (
     <div className="mx-auto lg:max-w-6xl h-screen">
-      <div className="">
+      <div className="lg:px-4">
         <div className="flex  items-center justify-between lg:mt-8">
           <div className="flex gap-1 items-center p-2 lg:p-0 shadow-md mb-4 w-screen lg:block lg:shadow-none lg:w-auto fixed lg:static top-0  bg-white">
             <AiOutlineLeft className="h-5 w-5 lg:hidden" />
@@ -18,7 +18,7 @@ function Main() {
             Need Help?
           </h2>
         </div>
-        <div className="flex  items-center justify-between lg:justify-start  gap-2 mt-4 lg:mt-12  text-xl md:text-2xl px-4 lg:px-0 ">
+        <div className="flex  items-center justify-between lg:justify-start  gap-2 mt-14 lg:mt-12  text-xl md:text-2xl px-4 lg:px-0 ">
           <h1>
             Hello, <span className="text-[#2136D4] ">Ramkrishna Pandey</span>
           </h1>
@@ -34,7 +34,7 @@ function Main() {
         </div>
         <hr className="hidden lg:block" />
       </div>
-      <div className="hidden h-3/6   lg:flex flex-col items-center justify-center ">
+      <div className="hidden h-2/4 lg:flex flex-col items-center justify-center ">
         <div className="lg:flex  items-center hidden justify-center gap-3">
           <img src="/giftbox.png" alt="giftbox" className="h-36 w-36" />
           <div className="flex items-center flex-col">
