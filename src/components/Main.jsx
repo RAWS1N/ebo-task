@@ -7,7 +7,7 @@ import Service from "./Service";
 
 function Main() {
   return (
-    <div className="md:ml-[85px]  px-4 my-4">
+    <div className="md:ml-[85px]  px-4 my-4 h-screen">
       <div className="flex items-center gap-2">
         <BsArrowLeft className="h-8 w-8" />
         <p className="text-xl font-semibold">Home</p>
@@ -45,7 +45,7 @@ function Main() {
           ))}
         </div>
       </div>
-      <div className="items-center justify-center mt-12 hidden md:flex">
+      <div className="md:items-center md:flex-col md:justify-center  hidden md:flex">
         <img src="/giftbox.png" alt="giftbox" className="h-44 w-44" />
         <div className="flex flex-col items-center">
           <p className="text-2xl font-semibold">Looking to celebrate?</p>

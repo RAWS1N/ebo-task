@@ -8,7 +8,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 
 function Navbar() {
   return (
-    <div className="flex items-center h-[109px] justify-center lg:border-b lg:border-black shadow-sm">
+    <div className=" items-center h-[109px] justify-center lg:border-b lg:border-black shadow-sm hidden lg:flex">
       <img src="/logo.svg" alt="logo" className="h-24 w-24 md:h-32 md:w-32" />
       <div className="flex items-center justify-center mt-2 gap-2 ">
         <p className="border-l-2 h-14"></p>

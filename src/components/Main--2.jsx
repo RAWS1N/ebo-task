@@ -3,26 +3,29 @@ import { services, mobileLinks } from "../utility/data";
 import ServiceII from "./ServiceII";
 import MobileLinkII from "./MobileLinkII";
 import { MdEdit } from "react-icons/md";
+import { AiOutlineLeft } from "react-icons/ai";
 
 function Main() {
   return (
-    <div className="mx-auto lg:max-w-6xl">
+    <div className="mx-auto lg:max-w-6xl h-screen">
       <div className="">
-        <h1 className=" mt-4 text-2xl  hidden lg:block text-[#2136D4] tracking-wider">Home</h1>
-        <div className="flex  items-center justify-between lg:mt-8 ">
-          <div className="relative hidden lg:block">
-            <h1 className=" text-3xl ">My Account</h1>
-            <p className="absolute border-b-2 w-28 border-gray-800 my-1 "></p>
+        {/* <h1 className=" mt-4 text-2xl  hidden lg:block text-[#2136D4] tracking-wider">
+          Home
+        </h1> */}
+        <div className="flex  items-center justify-between lg:mt-8">
+          <div className="flex gap-1 items-center p-2 lg:p-0 shadow-sm mb-4 w-screen lg:block lg:shadow-none lg:w-auto">
+            <AiOutlineLeft className="h-5 w-5 lg:hidden" />
+            <h1 className="text-base lg:text-3xl ">My Account</h1>
           </div>
-          <h2 className="text-xl hidden lg:block text-[#2136D4] ">
+          <h2 className="text-xl hidden lg:inline-block text-[#2136D4] mr-12 self-start">
             Need Help?
           </h2>
         </div>
-        <div className="flex ml-4 items-center justify-between lg:justify-start  gap-2 mt-4 lg:mt-12  text-xl md:text-2xl px-4 lg:px-0">
+        <div className="flex  items-center justify-between lg:justify-start  gap-2 mt-4 lg:mt-12  text-xl md:text-2xl px-4 lg:px-0 ">
           <h1>
             Hello, <span className="text-[#2136D4] ">Ramkrishna Pandey</span>
           </h1>
-          <div className="flex items-center gap-1 self-end text-gray-500">
+          <div className="flex items-center gap-1 self-center lg:self-end text-gray-500 mr-4">
             <p className="text-sm ">Edit</p>
             <MdEdit className="h-4 w-4" />
           </div>
@@ -34,19 +37,21 @@ function Main() {
         </div>
         <hr className="hidden lg:block" />
       </div>
-      <div className="lg:flex items-center hidden justify-center mt-6 gap-3">
-        <img src="/giftbox.png" alt="giftbox" className="h-36 w-36" />
-        <div className="flex items-center flex-col">
-          <h1 className="text-2xl">Looking to celebrate?</h1>
-          <button className="px-6 py-1 my-2 border rounded-lg bg-[#2136D4] text-white font-medium">
-            Let's go
-          </button>
+      <div className="hidden h-3/6   lg:flex flex-col items-center justify-center ">
+        <div className="lg:flex  items-center hidden justify-center gap-3">
+          <img src="/giftbox.png" alt="giftbox" className="h-36 w-36" />
+          <div className="flex items-center flex-col">
+            <h1 className="text-2xl">Looking to celebrate?</h1>
+            <button className="px-6 py-1 my-2 border rounded-lg bg-[#2136D4] text-white font-medium">
+              Let's go
+            </button>
+          </div>
         </div>
       </div>
-      <div className="lg:hidden ml-4 w-11/12">
-        <p className="px-4 text-[#2136D4] font-bold">Need help?</p>
-        <p className="px-4 mt-6 font-semibold">Useful Links</p>
-        <div className="grid grid-cols-1 mb-2  mt-2">
+      <div className="lg:hidden ml-2 ">
+        <p className="px-2 text-[#2136D4] font-bold">Need help?</p>
+        <p className="px-2 mt-6 font-semibold">Useful Links</p>
+        <div className="grid grid-cols-1 mb-2  mt-2 w-11/12">
           {mobileLinks.map((link, idx) => (
             <MobileLinkII key={idx} text={link} />
           ))}
