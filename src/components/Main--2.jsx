@@ -9,11 +9,8 @@ function Main() {
   return (
     <div className="mx-auto lg:max-w-6xl h-screen">
       <div className="">
-        {/* <h1 className=" mt-4 text-2xl  hidden lg:block text-[#2136D4] tracking-wider">
-          Home
-        </h1> */}
         <div className="flex  items-center justify-between lg:mt-8">
-          <div className="flex gap-1 items-center p-2 lg:p-0 shadow-sm mb-4 w-screen lg:block lg:shadow-none lg:w-auto">
+          <div className="flex gap-1 items-center p-2 lg:p-0 shadow-md mb-4 w-screen lg:block lg:shadow-none lg:w-auto fixed lg:static top-0  bg-white">
             <AiOutlineLeft className="h-5 w-5 lg:hidden" />
             <h1 className="text-base lg:text-3xl ">My Account</h1>
           </div>
